@@ -6,7 +6,7 @@ An agent that stops one step early turns finished work into a question. It costs
 
 ## Watch
 
-A 36 second explainer, narrated with ElevenLabs v4: [release v0.2.0](https://github.com/wyktron/are-you-dodging-it/releases/tag/v0.4.0).
+A 36 second explainer, narrated with ElevenLabs v4: [release v0.2.0](https://github.com/wyktron/are-you-dodging-it/releases/tag/v0.5.0).
 
 ## The five exceptions
 
