@@ -4,6 +4,10 @@ A skill for AI coding agents that catches the moment before a reply hands back w
 
 An agent that stops one step early turns finished work into a question. It costs the reader a turn and makes them act as project manager. This skill adds a check before the reply: list what is undone, then do everything that is yours, doable now, and not stopped by a named exception.
 
+## Watch
+
+A 36 second explainer, narrated with ElevenLabs v4: [release v0.1.0](https://github.com/wyktron/are-you-dodging-it/releases/tag/v0.1.0).
+
 ## The five exceptions
 
 - deleting, overwriting or moving something the owner did not name
