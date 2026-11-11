@@ -1,27 +1,20 @@
 # Are you dodging it?
 
-A skill for AI coding agents that catches the moment before a reply hands work back that could have
-been finished.
+A skill for AI coding agents that catches the moment before a reply hands back work that could have been finished.
 
-The failure it targets is not doing nothing. It is stopping one step early and describing the
-remaining step instead of taking it, then waiting for the user to say "finish it". That costs a turn
-and turns the user into a project manager.
+An agent that stops one step early turns finished work into a question. It costs the reader a turn and makes them act as project manager. This skill adds a check before the reply: list what is undone, then do everything that is yours, doable now, and not stopped by a named exception.
 
-## What it does
+## The five exceptions
 
-Before sending a reply, the agent lists what is undone and does everything that is mine, doable now,
-and not blocked by a named exception. The blocker list is deliberately narrow:
-
-- destruction that needs explicit confirmation
+- deleting, overwriting or moving something the owner did not name
 - credentials or security settings
 - the owner's taste, where numbers cannot settle it
 - irreversible money or external side effects
 - a dependency that is provably down
 
-Long-running work is not on that list. Backgrounding is a scheduling decision: start it, keep doing
-everything that does not depend on it, end the turn only when nothing actionable remains.
+Long work is not on that list. Start the build in the background and keep working on whatever does not depend on it. If nothing else can move, say what is running and what will happen when it lands.
 
-## The dodge taxonomy
+## What the dodges look like
 
 | Dodge | Sounds like |
 |:--|:--|
@@ -42,12 +35,11 @@ cp -r are-you-dodging-it ~/.config/opencode/skills/
 cp -r are-you-dodging-it ~/.claude/skills/
 ```
 
-It is a plain `SKILL.md` with YAML frontmatter, no dependencies.
+It is a plain `SKILL.md` with YAML frontmatter and no dependencies.
 
 ## Evals
 
-`evals/evals.json` holds three prompts used to check that the skill does not turn into a licence to
-skip confirmation on destructive work.
+`evals/evals.json` holds three prompts used to check that the skill does not become a licence to skip confirmation on destructive work.
 
 ## Licence
 
