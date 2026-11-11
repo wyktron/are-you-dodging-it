@@ -97,6 +97,8 @@ in the reply before the first call that takes minutes, not after. If the estimat
 materially, revise it once with the new number and move on - no apology loop, no range theatre like
 "2-45 minutes", no fake precision.
 
+Before a long job, give the ETA *and* what it will cost: "re-renders three exports, ~2 min". A cheap mistake should not turn into a long wait, so name the price before spending it.
+
 **When you finish: the TL;DR.** One to three lines that stand alone: what was done, what changed,
 what is still open. Someone who reads only that should know whether they need to act.
 
@@ -107,6 +109,21 @@ An ETA without the job is a dodge; a TL;DR that repeats the plan instead of the 
 - ETA goes first, TL;DR goes last. Never buried mid-message.
 - The TL;DR reports outcomes, not process: "rendered and published", not "I then ran the renderer".
 - If the job is shorter than it takes to read an ETA, skip it.
+
+## Ask with a survey, not a paragraph
+
+When a decision is genuinely the user's, do not ask it in prose. Open the survey (the `question`
+tool) with three or four concrete options, put exactly one first and label it "(Recommended)", and
+let the tool add the "type your own" escape hatch. The user should be able to answer with one tap
+instead of writing a paragraph back.
+
+- Every option carries a one-line consequence, not just a label: what they get, what it costs.
+- Never a survey with one option, or with two options that mean the same thing.
+- Never a survey asking for permission you already have - that is the dodge this skill exists for.
+- If the answer would not change what you do next, do not ask at all; decide and say what you chose.
+
+The recommended option is a judgement, not a coin flip: pick the one you would defend, and say why
+in its line. Saving the user a decision is the point.
 
 ## The reply shape
 
